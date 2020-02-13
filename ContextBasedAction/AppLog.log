@@ -1,0 +1,793 @@
+[2019-09-23 10:09:43,124] [INFO] [root]: Working directory path : /home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async
+[2019-09-23 10:10:04,631] [WARNING] [tensorflow]: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+[2019-09-23 10:10:04,749] [INFO] [root]: Generating grammar tables from /usr/lib/python3.5/lib2to3/Grammar.txt
+[2019-09-23 10:10:04,785] [INFO] [root]: Generating grammar tables from /usr/lib/python3.5/lib2to3/PatternGrammar.txt
+[2019-09-23 10:12:33,551] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:12:33,551] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': '3rxbnkkltsfyymo1rqxvgirviilgfmht4vxjagfdhpq'} from collection
+[2019-09-23 10:12:33,583] [INFO] [app.db.ModelManager]: creating document
+[2019-09-23 10:12:33,584] [INFO] [app.db.MongoManager]: creating document in model_info collection
+[2019-09-23 10:12:34,924] [INFO] [root]: Working directory path : /home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async
+[2019-09-23 10:12:37,038] [WARNING] [celery.redirected]: Extreme care is taken to ensure nothing happens that could alter the present.
+[2019-09-23 10:12:37,039] [WARNING] [celery.redirected]: **************************************************
+[2019-09-23 10:12:37,039] [WARNING] [celery.redirected]: {'conversational': 'True'}
+[2019-09-23 10:12:37,039] [INFO] [models.contextExtractor.context_extractor]: ====== Cleanining input data ======
+[2019-09-23 10:12:38,512] [INFO] [models.contextExtractor.context_extractor]: ====== Cleanining input data done ======
+[2019-09-23 10:12:38,513] [INFO] [models.contextExtractor.context_extractor]: ====== Extracting the information of input text ======
+[2019-09-23 10:12:38,829] [INFO] [models.contextExtractor.impl.context_parts.replacements_extractor]: ************ Getting replacements
+[2019-09-23 10:12:38,830] [INFO] [models.contextExtractor.impl.context_parts.replacements_extractor]: ************ Getting replacements done
+[2019-09-23 10:12:38,830] [INFO] [models.contextExtractor.impl.utils]: ************ Getting actions sctructure
+[2019-09-23 10:12:39,032] [INFO] [models.contextExtractor.impl.utils]: ************ Getting actions sctructure done
+[2019-09-23 10:12:39,032] [INFO] [models.contextExtractor.context_extractor]: ====== Extracting the information of input text done ======
+[2019-09-23 10:12:39,032] [INFO] [models.contextExtractor.context_extractor]: ====== Creating extraction pipeline ======
+[2019-09-23 10:12:39,032] [INFO] [models.contextExtractor.context_extractor]: ====== Creating extraction pipeline done ======
+[2019-09-23 10:12:39,032] [INFO] [models.contextExtractor.context_extractor]: ====== Running the extraction pipeline ======
+[2019-09-23 10:12:39,032] [INFO] [models.contextExtractor.impl.context_parts.verbs_extractor]: ************ Extracting verbs.
+[2019-09-23 10:12:39,046] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:12:39,047] [INFO] [models.contextExtractor.impl.context_parts.verbs_extractor]: ************ extracting verbs done.
+[2019-09-23 10:12:39,047] [INFO] [models.contextExtractor.impl.context_parts.agents_extractor]: ************ Extracting indirect objects
+[2019-09-23 10:12:39,048] [INFO] [models.contextExtractor.impl.context_parts.agents_extractor]: ************ Extracting indirect objects done
+[2019-09-23 10:12:39,048] [INFO] [models.contextExtractor.impl.context_parts.indirect_object_extractor]: ************ Extracting indirect objects
+[2019-09-23 10:12:39,050] [INFO] [models.contextExtractor.impl.context_parts.indirect_object_extractor]: ************ Extracting indirect objects done
+[2019-09-23 10:12:39,050] [INFO] [models.contextExtractor.impl.context_parts.adv_mod_extractor]: ************ Extracting Adverbs
+[2019-09-23 10:12:39,050] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:12:39,052] [INFO] [models.contextExtractor.impl.context_parts.adv_mod_extractor]: ************ Extracting Adverbs done
+[2019-09-23 10:12:39,052] [INFO] [models.contextExtractor.impl.context_parts.direct_object_extractor]: ************ Extracting direct objects
+[2019-09-23 10:12:39,055] [INFO] [models.contextExtractor.impl.context_parts.direct_object_extractor]: ************ Extracting direct objects done
+[2019-09-23 10:12:39,055] [INFO] [models.contextExtractor.impl.context_parts.subject_extractor]: ************ Extracting subject objects
+[2019-09-23 10:12:39,056] [INFO] [models.contextExtractor.impl.context_parts.subject_extractor]: ************ Extracting subject done
+[2019-09-23 10:12:39,056] [INFO] [models.contextExtractor.impl.context_parts.action_extractor]: ************ Setting actions
+[2019-09-23 10:12:40,624] [INFO] [models.contextExtractor.impl.context_parts.action_extractor]: ************ Setting actions done
+[2019-09-23 10:12:40,624] [INFO] [models.contextExtractor.context_extractor]: ====== Running the extraction pipeline done ======
+[2019-09-23 10:12:40,624] [INFO] [app.db.MongoManager]: updating collection
+[2019-09-23 10:12:40,647] [INFO] [celery.app.trace]: Task jobs.tasks.get_prediction[4b9511d3-d08b-44ff-89e7-33e9ca9d05c1] succeeded in 7.014380806998815s: None
+[2019-09-23 10:13:45,541] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:13:45,541] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': 'swmnbtv1joqwyprtmvytprlvv9taar0w84urztmp9he'} from collection
+[2019-09-23 10:13:45,545] [INFO] [app.db.ModelManager]: creating document
+[2019-09-23 10:13:45,545] [INFO] [app.db.MongoManager]: creating document in model_info collection
+[2019-09-23 10:13:45,922] [INFO] [root]: Working directory path : /home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async
+[2019-09-23 10:13:46,212] [WARNING] [celery.redirected]: Extreme care is taken to ensure nothing happens that could alter the present.
+[2019-09-23 10:13:46,212] [WARNING] [celery.redirected]: **************************************************
+[2019-09-23 10:13:46,212] [WARNING] [celery.redirected]: {'conversational': 'True'}
+[2019-09-23 10:13:46,212] [INFO] [models.contextExtractor.context_extractor]: ====== Cleanining input data ======
+[2019-09-23 10:13:46,212] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:13:46,577] [ERROR] [engine.predict]: Text has not a valid conversational format
+Traceback (most recent call last):
+  File "/home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async/engine/predict.py", line 48, in predict
+    prediction = self.model.predict(self.data, **self.other_args)
+  File "/home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async/models/contextExtractor/context_extractor.py", line 58, in predict
+    text = preprocess_text(text, conversational)
+  File "/home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async/models/contextExtractor/impl/preprocess_data.py", line 22, in preprocess_text
+    text = transform_conversation(text)
+  File "/home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async/models/contextExtractor/impl/preprocess_data.py", line 47, in transform_conversation
+    transformed_sentences_list.append(transform_sentence(sentence))
+  File "/home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async/models/contextExtractor/impl/preprocess_data.py", line 91, in transform_sentence
+    colons_index = get_colons_index(doc)
+  File "/home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async/models/contextExtractor/impl/preprocess_data.py", line 71, in get_colons_index
+    raise Exception("Text has not a valid conversational format")
+Exception: Text has not a valid conversational format
+[2019-09-23 10:13:46,620] [INFO] [app.db.MongoManager]: updating collection
+[2019-09-23 10:13:46,625] [INFO] [celery.app.trace]: Task jobs.tasks.get_prediction[0c1a50ad-f680-49b4-9792-4b4c33240f64] succeeded in 1.0728589550126344s: None
+[2019-09-23 10:13:57,959] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:13:57,960] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': '4d4qfitb7saz1uot7zlfxirycs1lo02hjhg59bif2oy'} from collection
+[2019-09-23 10:13:57,962] [INFO] [app.db.ModelManager]: creating document
+[2019-09-23 10:13:57,962] [INFO] [app.db.MongoManager]: creating document in model_info collection
+[2019-09-23 10:13:58,375] [INFO] [root]: Working directory path : /home/alvaro/Descargas/verbis/AI-Beta-V52/context_extraction_async
+[2019-09-23 10:13:58,668] [WARNING] [celery.redirected]: Meeting Chairman: If we are all here, let's get started. First of all, I'd like you to please join me in welcoming Jack Peterson, our Southwest Area Sales Vice President.
+
+Jack Peterson: Thank you for having me, I'm looking forward to today's meeting.
+
+Meeting Chairman: I'd also like to introduce Margaret Simmons who recently joined our team.
+
+Margaret: May I also introduce my assistant, Bob Hamp.
+
+Meeting Chairman: Welcome Bob. I'm afraid our national sales director, Anne Trusting, can't be with us today. She is in Kobe at the moment, developing our Far East sales force.
+
+Meeting Chairman: Let's get started. We're here today to discuss ways of improving sales in rural market areas. First, let's go over the report from the last meeting which was held on June 24th. Right, Tom, over to you.
+
+Tom Robbins: Thank you Mark. Let me just summarize the main points of the last meeting. We began the meeting by approving the changes in our sales reporting system discussed on May 30th. After briefly revising the changes that will take place, we moved on to a brainstorming session concerning after customer support improvements. You'll find a copy of the main ideas developed and discussed in these sessions in the photocopies in front of you. The meeting was declared closed at 11.30.
+
+Meeting Chairman: Thank you Tom. So, if there is nothing else we need to discuss, let's move on to today's agenda. Have you all received a copy of today's agenda? If you don't mind, I'd like to skip item 1 and move on to item 2: Sales improvement in rural market areas. Jack has kindly agreed to give us a report on this matter. Jack?
+
+Jack Peterson: Before I begin the report, I'd like to get some ideas from you all. How do you feel about rural sales in your sales districts? I suggest we go round the table first to get all of your input.
+
+John Ruting: In my opinion, we have been focusing too much on urban customers and their needs. The way I see things, we need to return to our rural base by developing an advertising campaign to focus on their particular needs.
+
+Alice Linnes: I'm afraid I can't agree with you. I think rural customers want to feel as important as our customers living in cities. I suggest we give our rural sales teams more help with advanced customer information reporting.
+
+Donald Peters: Excuse me, I didn't catch that. Could you repeat that, please?
+
+Alice Linnes: I just stated that we need to give our rural sales teams better customer information reporting.
+
+John Ruting: I don't quite follow you. What exactly do you mean?
+
+Alice Linnes: Well, we provide our city sales staff with database information on all of our larger clients. We should be providing the same sort of knowledge on our rural customers to our sales staff there.
+
+Jack Peterson: Would you like to add anything, Jennifer?
+
+Jennifer Miles: I must admit I never thought about rural sales that way before. I have to agree with Alice.
+
+Jack Peterson: Well, let me begin with this Power Point presentation (Jack presents his report). As you can see, we are developing new methods to reach out to our rural customers.
+
+John Ruting: I suggest we break up into groups and discuss the ideas we've seen presented.
+
+Meeting Chairman: Unfortunately, we're running short of time. We'll have to leave that to another time.
+
+Jack Peterson: Before we close, let me just summarize the main points:Rural customers need special help to feel more valued.Our sales teams need more accurate information on our customers.A survey will be completed to collect data on spending habits in these areas.The results of this survey will be delivered to our sales teams. We are considering specific data mining procedures to help deepen our understanding.Meeting Chairman: Thank you very much Jack. Right, it looks as though we've covered the main items Is there any other business?
+
+Donald Peters: Can we fix the next meeting, please?
+
+Meeting Chairman: Good idea Donald. How does Friday in two weeks time sound to everyone? Let's meet at the same time, 9 o'clock. Is that OK for everyone? Excellent. I'd like to thank Jack for coming to our meeting today. The meeting is closed.
+[2019-09-23 10:13:58,668] [WARNING] [celery.redirected]: **************************************************
+[2019-09-23 10:13:58,668] [WARNING] [celery.redirected]: {'conversational': 'True'}
+[2019-09-23 10:13:58,668] [INFO] [models.contextExtractor.context_extractor]: ====== Cleanining input data ======
+[2019-09-23 10:13:58,668] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:13:59,042] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:13:59,360] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:13:59,691] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:00,029] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:00,370] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:00,722] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:01,090] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:01,447] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:01,793] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:02,143] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:02,481] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:02,820] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:03,153] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:03,490] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:03,836] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:04,168] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:04,509] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:04,854] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:05,187] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:05,523] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:05,897] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:06,228] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:14:06,571] [INFO] [models.contextExtractor.context_extractor]: ====== Cleanining input data done ======
+[2019-09-23 10:14:06,571] [INFO] [models.contextExtractor.context_extractor]: ====== Extracting the information of input text ======
+[2019-09-23 10:14:07,821] [INFO] [models.contextExtractor.impl.context_parts.replacements_extractor]: ************ Getting replacements
+[2019-09-23 10:14:07,827] [INFO] [models.contextExtractor.impl.context_parts.replacements_extractor]: ************ Getting replacements done
+[2019-09-23 10:14:07,828] [INFO] [models.contextExtractor.impl.utils]: ************ Getting actions sctructure
+[2019-09-23 10:14:20,286] [INFO] [models.contextExtractor.impl.utils]: ************ Getting actions sctructure done
+[2019-09-23 10:14:20,286] [INFO] [models.contextExtractor.context_extractor]: ====== Extracting the information of input text done ======
+[2019-09-23 10:14:20,286] [INFO] [models.contextExtractor.context_extractor]: ====== Creating extraction pipeline ======
+[2019-09-23 10:14:20,286] [INFO] [models.contextExtractor.context_extractor]: ====== Creating extraction pipeline done ======
+[2019-09-23 10:14:20,286] [INFO] [models.contextExtractor.context_extractor]: ====== Running the extraction pipeline ======
+[2019-09-23 10:14:20,286] [INFO] [models.contextExtractor.impl.context_parts.verbs_extractor]: ************ Extracting verbs.
+[2019-09-23 10:14:20,287] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,288] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,288] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,288] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,289] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,289] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,289] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,289] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,290] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,290] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,290] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,290] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,290] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,291] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,291] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,291] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,291] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,292] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,292] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,292] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,292] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,293] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,293] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,293] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,293] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,294] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,294] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,294] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,294] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,295] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,295] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,295] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,295] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,296] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,296] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,296] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,296] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,296] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,297] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,297] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,297] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,297] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,298] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,298] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,298] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,298] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,299] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,299] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,299] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,299] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,300] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,300] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,300] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,300] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,301] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,301] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,301] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,301] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,301] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,302] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,302] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,302] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,302] [INFO] [models.contextExtractor.impl.context_parts.verbs_extractor]: ************ extracting verbs done.
+[2019-09-23 10:14:20,302] [INFO] [models.contextExtractor.impl.context_parts.agents_extractor]: ************ Extracting indirect objects
+[2019-09-23 10:14:20,340] [INFO] [models.contextExtractor.impl.context_parts.agents_extractor]: ************ Extracting indirect objects done
+[2019-09-23 10:14:20,340] [INFO] [models.contextExtractor.impl.context_parts.indirect_object_extractor]: ************ Extracting indirect objects
+[2019-09-23 10:14:20,406] [INFO] [models.contextExtractor.impl.context_parts.indirect_object_extractor]: ************ Extracting indirect objects done
+[2019-09-23 10:14:20,407] [INFO] [models.contextExtractor.impl.context_parts.adv_mod_extractor]: ************ Extracting Adverbs
+[2019-09-23 10:14:20,407] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,409] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,410] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,411] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,412] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,413] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,414] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,416] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,417] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,418] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,419] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,421] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,422] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,423] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,424] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,425] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,427] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,428] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,428] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,429] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,430] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,431] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,432] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,433] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,434] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,435] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,436] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,439] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,441] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,443] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,444] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,446] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,447] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,449] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,451] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,452] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,453] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,454] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,455] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,456] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,457] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,458] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,459] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,460] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,461] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,462] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,463] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,464] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,465] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,466] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,467] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,468] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,470] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,472] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,474] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,476] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,478] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,479] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,480] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,481] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,482] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,483] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:14:20,553] [INFO] [models.contextExtractor.impl.context_parts.adv_mod_extractor]: ************ Extracting Adverbs done
+[2019-09-23 10:14:20,553] [INFO] [models.contextExtractor.impl.context_parts.direct_object_extractor]: ************ Extracting direct objects
+[2019-09-23 10:14:20,687] [INFO] [models.contextExtractor.impl.context_parts.direct_object_extractor]: ************ Extracting direct objects done
+[2019-09-23 10:14:20,687] [INFO] [models.contextExtractor.impl.context_parts.subject_extractor]: ************ Extracting subject objects
+[2019-09-23 10:14:20,752] [INFO] [models.contextExtractor.impl.context_parts.subject_extractor]: ************ Extracting subject done
+[2019-09-23 10:14:20,752] [INFO] [models.contextExtractor.impl.context_parts.action_extractor]: ************ Setting actions
+[2019-09-23 10:14:22,170] [INFO] [models.contextExtractor.impl.context_parts.action_extractor]: ************ Setting actions done
+[2019-09-23 10:14:22,171] [INFO] [models.contextExtractor.context_extractor]: ====== Running the extraction pipeline done ======
+[2019-09-23 10:14:22,171] [INFO] [app.db.MongoManager]: updating collection
+[2019-09-23 10:14:22,179] [INFO] [celery.app.trace]: Task jobs.tasks.get_prediction[c779ca12-cf42-4ebd-af7e-3f77ef54789f] succeeded in 24.212452522973763s: None
+[2019-09-23 10:14:22,381] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:14:22,382] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': '4d4qfitb7saz1uot7zlfxirycs1lo02hjhg59bif2oy'} from collection
+[2019-09-23 10:14:26,147] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:14:26,148] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': '4d4qfitb7saz1uot7zlfxirycs1lo02hjhg59bif2oy'} from collection
+[2019-09-23 10:14:38,540] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:14:38,540] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': '4d4qfitb7saz1uot7zlfxirycs1lo02hjhg59bif2oy'} from collection
+[2019-09-23 10:16:18,002] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:16:18,002] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': '4d4qfitb7saz1uot7zlfxirycs1lo02hjhg59bif2oy'} from collection
+[2019-09-23 10:16:40,677] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:16:40,677] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': '46mavmb7yajwnpkcnfp4olrdko5nyavuvapioy0ghxu'} from collection
+[2019-09-23 10:16:40,680] [INFO] [app.db.ModelManager]: creating document
+[2019-09-23 10:16:40,680] [INFO] [app.db.MongoManager]: creating document in model_info collection
+[2019-09-23 10:16:40,687] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:16:40,691] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:16:40,691] [INFO] [app.db.MongoManager]: finding document with id: {'model_name': 'context-extraction'} from collection
+[2019-09-23 10:16:40,924] [INFO] [store.MinioManager]: Local model config updated, finding local config files...
+[2019-09-23 10:16:40,925] [WARNING] [celery.redirected]: Meeting Chairman: If we are all here, let's get started. First of all, I'd like you to please join me in welcoming Jack Peterson, our Southwest Area Sales Vice President.
+
+Jack Peterson: Thank you for having me, I'm looking forward to today's meeting.
+
+Meeting Chairman: I'd also like to introduce Margaret Simmons who recently joined our team.
+
+Margaret: May I also introduce my assistant, Bob Hamp.
+
+Meeting Chairman: Welcome Bob. I'm afraid our national sales director, Anne Trusting, can't be with us today. She is in Kobe at the moment, developing our Far East sales force.
+
+Meeting Chairman: Let's get started. We're here today to discuss ways of improving sales in rural market areas. First, let's go over the report from the last meeting which was held on June 24th. Right, Tom, over to you.
+
+Tom Robbins: Thank you Mark. Let me just summarize the main points of the last meeting. We began the meeting by approving the changes in our sales reporting system discussed on May 30th. After briefly revising the changes that will take place, we moved on to a brainstorming session concerning after customer support improvements. You'll find a copy of the main ideas developed and discussed in these sessions in the photocopies in front of you. The meeting was declared closed at 11.30.
+
+Meeting Chairman: Thank you Tom. So, if there is nothing else we need to discuss, let's move on to today's agenda. Have you all received a copy of today's agenda? If you don't mind, I'd like to skip item 1 and move on to item 2: Sales improvement in rural market areas. Jack has kindly agreed to give us a report on this matter. Jack?
+
+Jack Peterson: Before I begin the report, I'd like to get some ideas from you all. How do you feel about rural sales in your sales districts? I suggest we go round the table first to get all of your input.
+
+John Ruting: In my opinion, we have been focusing too much on urban customers and their needs. The way I see things, we need to return to our rural base by developing an advertising campaign to focus on their particular needs.
+
+Alice Linnes: I'm afraid I can't agree with you. I think rural customers want to feel as important as our customers living in cities. I suggest we give our rural sales teams more help with advanced customer information reporting.
+
+Donald Peters: Excuse me, I didn't catch that. Could you repeat that, please?
+
+Alice Linnes: I just stated that we need to give our rural sales teams better customer information reporting.
+
+John Ruting: I don't quite follow you. What exactly do you mean?
+
+Alice Linnes: Well, we provide our city sales staff with database information on all of our larger clients. We should be providing the same sort of knowledge on our rural customers to our sales staff there.
+
+Jack Peterson: Would you like to add anything, Jennifer?
+
+Jennifer Miles: I must admit I never thought about rural sales that way before. I have to agree with Alice.
+
+Jack Peterson: Well, let me begin with this Power Point presentation (Jack presents his report). As you can see, we are developing new methods to reach out to our rural customers.
+
+John Ruting: I suggest we break up into groups and discuss the ideas we've seen presented.
+
+Meeting Chairman: Unfortunately, we're running short of time. We'll have to leave that to another time.
+
+Jack Peterson: Before we close, let me just summarize the main points:Rural customers need special help to feel more valued.Our sales teams need more accurate information on our customers.A survey will be completed to collect data on spending habits in these areas.The results of this survey will be delivered to our sales teams. We are considering specific data mining procedures to help deepen our understanding.Meeting Chairman: Thank you very much Jack. Right, it looks as though we've covered the main items Is there any other business?
+
+Donald Peters: Can we fix the next meeting, please?
+
+Meeting Chairman: Good idea Donald. How does Friday in two weeks time sound to everyone? Let's meet at the same time, 9 o'clock. Is that OK for everyone? Excellent. I'd like to thank Jack for coming to our meeting today. The meeting is closed.
+[2019-09-23 10:16:40,925] [WARNING] [celery.redirected]: **************************************************
+[2019-09-23 10:16:40,926] [WARNING] [celery.redirected]: {'conversational': 'True'}
+[2019-09-23 10:16:40,926] [INFO] [models.contextExtractor.context_extractor]: ====== Cleanining input data ======
+[2019-09-23 10:16:40,926] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:41,308] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:41,644] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:42,002] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:42,336] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:42,692] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:43,074] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:43,445] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:43,807] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:44,144] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:44,520] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:44,862] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:45,237] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:45,600] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:45,927] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:46,274] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:46,609] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:46,985] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:47,385] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:47,736] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:48,099] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:48,479] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:48,808] [WARNING] [celery.redirected]: voy a ver si revientaaaaaaaaaaaaaaaaaaaa++++++++++++++++++++++++++++++++++
+[2019-09-23 10:16:49,149] [INFO] [models.contextExtractor.context_extractor]: ====== Cleanining input data done ======
+[2019-09-23 10:16:49,149] [INFO] [models.contextExtractor.context_extractor]: ====== Extracting the information of input text ======
+[2019-09-23 10:16:50,396] [INFO] [models.contextExtractor.impl.context_parts.replacements_extractor]: ************ Getting replacements
+[2019-09-23 10:16:50,403] [INFO] [models.contextExtractor.impl.context_parts.replacements_extractor]: ************ Getting replacements done
+[2019-09-23 10:16:50,403] [INFO] [models.contextExtractor.impl.utils]: ************ Getting actions sctructure
+[2019-09-23 10:17:02,833] [INFO] [models.contextExtractor.impl.utils]: ************ Getting actions sctructure done
+[2019-09-23 10:17:02,833] [INFO] [models.contextExtractor.context_extractor]: ====== Extracting the information of input text done ======
+[2019-09-23 10:17:02,833] [INFO] [models.contextExtractor.context_extractor]: ====== Creating extraction pipeline ======
+[2019-09-23 10:17:02,833] [INFO] [models.contextExtractor.context_extractor]: ====== Creating extraction pipeline done ======
+[2019-09-23 10:17:02,834] [INFO] [models.contextExtractor.context_extractor]: ====== Running the extraction pipeline ======
+[2019-09-23 10:17:02,834] [INFO] [models.contextExtractor.impl.context_parts.verbs_extractor]: ************ Extracting verbs.
+[2019-09-23 10:17:02,834] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,835] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,835] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,835] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,836] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,836] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,836] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,836] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,837] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,837] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,837] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,837] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,838] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,838] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,838] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,838] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,839] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,839] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,839] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,839] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,840] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,840] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,840] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,840] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,840] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,841] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,841] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,841] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,841] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,842] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,842] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,842] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,843] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,843] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,843] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,843] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,843] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,844] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,844] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,844] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,844] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,845] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,845] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,845] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,845] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,846] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,846] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,846] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,846] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,847] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,847] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,847] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,847] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,848] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,848] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,848] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,848] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,848] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,849] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,849] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,849] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,850] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,850] [INFO] [models.contextExtractor.impl.context_parts.verbs_extractor]: ************ extracting verbs done.
+[2019-09-23 10:17:02,850] [INFO] [models.contextExtractor.impl.context_parts.agents_extractor]: ************ Extracting indirect objects
+[2019-09-23 10:17:02,882] [INFO] [models.contextExtractor.impl.context_parts.agents_extractor]: ************ Extracting indirect objects done
+[2019-09-23 10:17:02,883] [INFO] [models.contextExtractor.impl.context_parts.indirect_object_extractor]: ************ Extracting indirect objects
+[2019-09-23 10:17:02,944] [INFO] [models.contextExtractor.impl.context_parts.indirect_object_extractor]: ************ Extracting indirect objects done
+[2019-09-23 10:17:02,944] [INFO] [models.contextExtractor.impl.context_parts.adv_mod_extractor]: ************ Extracting Adverbs
+[2019-09-23 10:17:02,944] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,946] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,947] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,948] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,949] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,950] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,950] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,951] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,952] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,953] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,954] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,955] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,956] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,956] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,957] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,959] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,960] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,961] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,961] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,962] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,963] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,964] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,965] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,966] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,967] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,968] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,969] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,970] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,971] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,972] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,973] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,974] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,975] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,976] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,977] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,978] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,979] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,980] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,981] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,982] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,983] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,984] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,985] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,986] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,987] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,988] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,989] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,990] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,991] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,992] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,993] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,994] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,995] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,995] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,996] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,997] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,998] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,999] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:02,999] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:03,000] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:03,001] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:03,002] [WARNING] [celery.redirected]: /home/alvaro/Escritorio/environments/context-extractor-3.5/lib/python3.5/site-packages/textacy/extract.py:354: DeprecationWarning: `pos_regex_matches()` has been deprecated! for similar but more powerful and performant functionality, use `textacy.extract.matches()` instead.
+  action="once",
+[2019-09-23 10:17:03,066] [INFO] [models.contextExtractor.impl.context_parts.adv_mod_extractor]: ************ Extracting Adverbs done
+[2019-09-23 10:17:03,066] [INFO] [models.contextExtractor.impl.context_parts.direct_object_extractor]: ************ Extracting direct objects
+[2019-09-23 10:17:03,194] [INFO] [models.contextExtractor.impl.context_parts.direct_object_extractor]: ************ Extracting direct objects done
+[2019-09-23 10:17:03,194] [INFO] [models.contextExtractor.impl.context_parts.subject_extractor]: ************ Extracting subject objects
+[2019-09-23 10:17:03,255] [INFO] [models.contextExtractor.impl.context_parts.subject_extractor]: ************ Extracting subject done
+[2019-09-23 10:17:03,255] [INFO] [models.contextExtractor.impl.context_parts.action_extractor]: ************ Setting actions
+[2019-09-23 10:17:04,630] [INFO] [models.contextExtractor.impl.context_parts.action_extractor]: ************ Setting actions done
+[2019-09-23 10:17:04,630] [INFO] [models.contextExtractor.context_extractor]: ====== Running the extraction pipeline done ======
+[2019-09-23 10:17:04,631] [INFO] [app.db.MongoManager]: updating collection
+[2019-09-23 10:17:04,637] [INFO] [celery.app.trace]: Task jobs.tasks.get_prediction[af979ae3-d089-4f0a-aadd-489033280cf5] succeeded in 23.953904233989306s: None
+[2019-09-23 10:17:46,029] [INFO] [app.db.MongoManager]: Auth is disabled for mongo
+[2019-09-23 10:17:46,029] [INFO] [app.db.MongoManager]: finding document with id: {'service_id': '46mavmb7yajwnpkcnfp4olrdko5nyavuvapioy0ghxu'} from collection

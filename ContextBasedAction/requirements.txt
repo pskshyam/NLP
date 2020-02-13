@@ -1,0 +1,35 @@
+## ASYNC FRAMEWORK
+pymongo==3.8.0
+jsonify==0.5
+configargparse==0.14.0
+falcon==1.4.1
+falcon-cors==1.1.7
+falcon-multipart==0.2.0
+falcon-jsonify==1.2
+gunicorn==19.9.0
+gevent==1.3.7
+pandas==0.23.4
+requests==2.22.0
+numpy==1.16.4
+minio==4.0.18
+celery==4.3.0
+eventlet==0.25.0
+redis==3.2.1
+
+### TESTING ###
+pytest
+mock
+pytest-mock
+freezegun
+pytest-cov
+mongomock
+flask_testing
+#Werkzeug==0.15.4
+
+### CONTEXT EXTRACTOR ###
+
+spacy==2.1.3
+#python -m spacy download en_core_web_sm
+textacy==0.7.1
+neuralcoref==4.0
+mlconjug
