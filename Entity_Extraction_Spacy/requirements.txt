@@ -1,0 +1,19 @@
+celery == 4.3.0
+spacy == 2.2.1
+jsonmerge == 1.7.0
+falcon == 2.0.0
+falcon-multipart == 0.2.0
+gunicorn == 19.9.0
+datefinder == 0.7.0
+pika == 1.1.0
+falcon-cors == 1.1.7
+redis == 3.3.8
+configargparse == 0.14.0
+gevent == 1.4.0
+pymongo == 3.9.0
+pandas == 0.25.1
+nltk == 3.4.5
+numpy == 1.17.3
+scikit-learn
+sklearn_pandas
+tpot

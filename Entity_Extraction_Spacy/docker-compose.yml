@@ -1,0 +1,29 @@
+version: '2'
+services:
+  cms_msa_extraction:
+    image: smartopsdevregistry.azurecr.io/cms/cms_msa_extraction:5.5.0 
+    restart: unless-stopped
+    depends_on:
+      - celery-msa
+    ports:
+      - "8000:8000"
+    command: gunicorn -t 120 --graceful-timeout 1000 services.api.parse.app:api -b :8000
+
+  celery-msa:
+    image: smartopsdevregistry.azurecr.io/cms/cms_msa_extraction:5.5.0
+    restart: unless-stopped
+    depends_on:
+      - ice-redis-msa
+    environment:
+      - celery_broker=redis://ice-redis-msa
+      - celery_backend=redis://ice-redis-msa
+    command: celery worker --app=services.api.jobs.config --pool=gevent --concurrency=20 --loglevel=INFO
+      
+  ice-redis-msa:
+    image: redis:latest
+    command: redis-server
+    volumes:
+      - .data/redis:/data
+    #ports:
+    #  - "6379:6379"
+    restart: unless-stopped

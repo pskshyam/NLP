@@ -1,0 +1,10 @@
+version: '2'
+services:
+  cms_doc_classification:
+    image: smartopsdevregistry.azurecr.io/cms/cms_doc_classification:5.4.1
+    volumes:
+      - ./cms_doc_classification/model:/model
+      - ./cms_doc_classification/uncased_L-12_H-768_A-12:/uncased_L-12_H-768_A-12
+    ports:
+      - "8082:8082"
+    command: gunicorn -t 120 --graceful-timeout 1000 services.api.parse.app:api -b :8082

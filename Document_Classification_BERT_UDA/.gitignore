@@ -1,0 +1,10 @@
+model/
+uncased_L-12_H-768_A-12/
+__pycache__/
+cms_doc_classification/
+nohup.out
+AppLog.log
+.data
+.idea
+.git
+.ipynb_checkpoints
