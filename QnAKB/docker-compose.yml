@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+    kbqna_app:
+        image: smartopsregistry.azurecr.io/kb/qnakb_app:5.4.0
+        restart: unless-stopped
+        volumes:
+            - ./sentence_model/:/qnakb/sentence_model
+        environment:
+            - mongo_host=${MONGO_HOST}
+            - mongo_port=${MONGO_PORT}
+            - mongo_auth_enabled=true
+            - mongo_username=${MONGO_USER_NAME}
+            - mongo_password=${MONGO_PASSWORD}
+            - mongo_auth_db=${MONGO_AUTH_DB}
+            - mongo_ice_kb_qna_collection=${MONGO_ICE_KB_QNA_COLLECTION}
+            - TFHUB_SENTENCE_MODEL_DIR=/qnakb/sentence_model/
+
+        ports:
+            - "5000:5000"
