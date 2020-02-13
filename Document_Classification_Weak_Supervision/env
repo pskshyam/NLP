@@ -1,0 +1,6 @@
+RABBIT_MQ_HOST=clones-dev.southindia.cloudapp.azure.com
+RABBIT_MQ_PORT=5672
+RABBIT_MQ_USERNAME=admin
+RABBIT_MQ_PASSWORD=admin
+RABBIT_MQ_DOC_CLASSIFICATION_QUEUE=ai.classification.inbound
+RABBIT_MQ_DOC_CLASSIFICATION_EXCHANGE=ai.classification.inbound

@@ -1,0 +1,7 @@
+/models
+/cms_doc_classification
+.csv
+.out
+.log
+.idea
+__pycache__

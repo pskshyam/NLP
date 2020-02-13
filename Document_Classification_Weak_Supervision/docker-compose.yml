@@ -1,0 +1,15 @@
+version: '2'
+services:
+  cms_doc_classification:
+    image: smartopsdevregistry.azurecr.io/cms/cms_doc_classification:6.0.0
+    volumes:
+      - ./cms_doc_classification/models/:/services/api/util/models
+    restart: unless-stopped
+    environment :
+      - RABBIT_MQ_HOST=${RABBIT_MQ_HOST}
+      - RABBIT_MQ_PORT=${RABBIT_MQ_PORT}
+      - RABBIT_MQ_USERNAME=${RABBIT_MQ_USERNAME}
+      - RABBIT_MQ_PASSWORD=${RABBIT_MQ_PASSWORD}
+      - RABBIT_MQ_DOC_CLASSIFICATION_QUEUE=${RABBIT_MQ_DOC_CLASSIFICATION_QUEUE}
+      - RABBIT_MQ_DOC_CLASSIFICATION_EXCHANGE=${RABBIT_MQ_DOC_CLASSIFICATION_EXCHANGE}
+    command: python /doc_classification/start.pyc
