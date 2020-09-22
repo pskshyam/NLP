@@ -32,4 +32,4 @@ spacy==2.1.3
 #python -m spacy download en_core_web_sm
 textacy==0.7.1
 neuralcoref==4.0
-mlconjug
+mlconjug3
