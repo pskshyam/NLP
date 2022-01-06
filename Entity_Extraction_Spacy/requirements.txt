@@ -1,4 +1,4 @@
-celery == 4.3.0
+celery == 5.2.2
 spacy == 2.2.1
 jsonmerge == 1.7.0
 falcon == 2.0.0
