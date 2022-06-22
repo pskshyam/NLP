@@ -1,7 +1,7 @@
 falcon==2.0.0
 falcon-multipart==0.2.0
 gunicorn==19.9.0
-numpy==1.17.2
+numpy==1.22.0
 pandas==0.25.1
 scikit-learn==0.21.3
 tensorflow==1.14.0
